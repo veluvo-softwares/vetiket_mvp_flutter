@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "443228942962",
+    "project_id": "vetika-vp-flutter",
+    "storage_bucket": "vetika-vp-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443228942962:android:af552e5d6d55c038dd48eb",
+        "android_client_info": {
+          "package_name": "com.example.vetika_mvp_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443228942962-u10ivjsi7ev8jr11752nbdeouqhb8k66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL_wgIEivhTko-sH4TWvumVivynxBt8RQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443228942962-u10ivjsi7ev8jr11752nbdeouqhb8k66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
