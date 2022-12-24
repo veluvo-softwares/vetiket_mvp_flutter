@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: VAppTheme.lightTheme,
       darkTheme: VAppTheme.darkTheme,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       home: const WidgetTree(),
     );
   }

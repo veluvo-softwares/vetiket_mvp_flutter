@@ -46,13 +46,7 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            _title(),
-            SizedBox(height: 20),
-            _userUid(),
-            SizedBox(height: 20),
-            _signOutButton(),
-          ],
+          children: [Text('Featured events'), _signOutButton()],
         ),
       ),
     );

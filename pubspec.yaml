@@ -40,6 +40,8 @@ dependencies:
   provider: ^6.0.4
   shared_preferences: ^2.0.15
   google_fonts: ^3.0.1
+  introduction_screen: ^3.0.2
+  
 
 dev_dependencies:
   flutter_test:
@@ -63,8 +65,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/Vetika_dark_tp.png
+    - assets/images/2.png
+    - assets/images/1.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -79,15 +83,21 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Gilroy
+    # - family: Gilroy
+    #   fonts:
+    #     - asset: assets/fonts/Gilroy-Regular.ttf
+    #     - asset: assets/fonts/Gilroy-RegularItalic.ttf
+    #     - asset: assets/fonts/Gilroy-Medium.ttf
+    #     - asset: assets/fonts/Gilroy-Light.ttf
+    #     - asset: assets/fonts/Gilroy-SemiBold.ttf
+    #     - asset: assets/fonts/Gilroy-Bold.ttf
+    #     - asset: assets/fonts/Gilroy-SemiBold.ttf
+
+    - family: RedHatDisplay
       fonts:
-        - asset: assets/fonts/Gilroy-Regular.ttf
-        - asset: assets/fonts/Gilroy-RegularItalic.ttf
-        - asset: assets/fonts/Gilroy-Medium.ttf
-        - asset: assets/fonts/Gilroy-Light.ttf
-        - asset: assets/fonts/Gilroy-SemiBold.ttf
-        - asset: assets/fonts/Gilroy-Bold.ttf
-        - asset: assets/fonts/Gilroy-SemiBold.ttf
+        - asset: assets/fonts/RedHatDisplay-Italic-VariableFont_wght.ttf
+        - asset: assets/fonts/RedHatDisplay-VariableFont_wght.ttf
+        
 
   #
   # For details regarding fonts from package dependencies,

@@ -55,7 +55,11 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _errorMessage() {
-    return Text(errorMessage == '' ? '' : 'Hmm ? $errorMessage');
+    return Text(
+      errorMessage == '' ? '' : 'Hmm, $errorMessage',
+      textAlign: TextAlign.center,
+      selectionColor: Colors.red,
+    );
   }
 
   Widget _submitButton() {
@@ -75,25 +79,15 @@ class _LoginPageState extends State<LoginPage> {
       },
       child: Text(
         isLogin ? 'Create an account' : 'Login',
-        style: Theme.of(context).textTheme.bodyLarge,
+        style: Theme.of(context).textTheme.bodySmall,
       ),
-    );
-  }
-
-  Widget _submitButton2() {
-    return OutlinedButton(
-      onPressed: () async {},
-      child: const Text('Sign in with Google'),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Login'),
-      ),
-      backgroundColor: Theme.of(context).secondaryHeaderColor,
+      //backgroundColor: Theme.of(context).secondaryHeaderColor,
       body: Container(
         height: double.infinity,
         width: double.infinity,
@@ -102,23 +96,24 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              // ignore: prefer_const_constructors
+              Image(
+                  image: AssetImage(
+                    'assets/images/2.png',
+                  ),
+                  height: 300,
+                  width: 300),
               Text(
-                'Vetika',
-                style: Theme.of(context).textTheme.headline1,
+                'All your events in one platform',
+                style: Theme.of(context).textTheme.displaySmall,
+                textAlign: TextAlign.center,
               ),
-              Text(
-                'Sub heading',
-                style: Theme.of(context).textTheme.headline4,
-              ),
-              Text(
-                'paragraph',
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
+              SizedBox(height: 20),
               _entryField('Email', _emailController),
+              SizedBox(height: 20),
               _entryField('Password', _passwordController),
               _errorMessage(),
               _submitButton(),
-              _submitButton2(),
               _loginOrRegisterButton(),
             ]),
       ),
